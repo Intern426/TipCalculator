@@ -46,6 +46,10 @@
 - (void)showLabels {
     return;
 }
+- (IBAction)onEditing:(id)sender {
+    self.billAmountField.text = @"";
+    self.billAmountField.textColor = [UIColor blackColor];
+}
 
 
 - (IBAction)updateLabels:(id)sender {

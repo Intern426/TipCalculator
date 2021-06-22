@@ -10,7 +10,7 @@ Time spent: 5 hours spent in total
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](https://i.imgur.com/W4IfmJO.gif)
 
 GIF created with [Kap](https://getkap.co/).
 
@@ -36,6 +36,9 @@ GIF created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app.
 
+The syntax took some time to get used to.
+
+Uploading the app onto the GitHub repository was a little difficult because it was a little confusing trying to understand (and generate) an ssh key and merge conflicts were also problematic. 
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.

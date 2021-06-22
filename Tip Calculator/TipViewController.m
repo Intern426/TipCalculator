@@ -44,15 +44,14 @@
 }
 
 - (void)showLabels {
-    double tip;
     return;
 }
 
 
 - (IBAction)updateLabels:(id)sender {
-    if (self.billAmountField.text.length == 0) {
-        [self hideLabels];
-    }
+   // if (self.billAmountField.text.length == 0) {
+   //     [self hideLabels];
+   // }
     
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];

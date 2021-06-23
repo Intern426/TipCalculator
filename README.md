@@ -4,7 +4,7 @@ Tip Calculator  is a tip calculator application for iOS.
 
 Submitted by: Kalkidan Tamirat
 
-Time spent: 5 hours spent in total
+Time spent: 6 hours spent in total
 
 ## User Stories
 
@@ -18,7 +18,7 @@ The following **optional** features are implemented:
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/W4IfmJO.gif)
+![](https://i.imgur.com/6a0Ko60.gif)
 
 GIF created with [Kap](https://getkap.co/).
 
@@ -36,9 +36,11 @@ GIF created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app.
 
-The syntax took some time to get used to.
+The biggest hurdle was getting used to the syntax, which in cases like using square brackets or having an @ before the string wasn't intuitive. 
 
 Uploading the app onto the GitHub repository was a little difficult because it was a little confusing trying to understand (and generate) an ssh key and merge conflicts were also problematic. 
+
+One small tedious bug occured when I accidently pressed Ctrl + K. The keyboard never appeared even if you refresh the app, giving me the false impression that the code was the problem instead even though I was editing. 
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.

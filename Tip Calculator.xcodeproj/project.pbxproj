@@ -16,6 +16,7 @@
 		DE530B9826826D0B006606C1 /* Tip_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE530B9726826D0B006606C1 /* Tip_CalculatorTests.m */; };
 		DE530BA326826D0B006606C1 /* Tip_CalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE530BA226826D0B006606C1 /* Tip_CalculatorUITests.m */; };
 		DE530BB226827658006606C1 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE530BB126827658006606C1 /* TipViewController.m */; };
+		DE71D7082682C78900B3DBDC /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE71D7072682C78900B3DBDC /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		DE530BA426826D0B006606C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE530BB026827658006606C1 /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		DE530BB126827658006606C1 /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		DE71D7062682C78900B3DBDC /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DE71D7072682C78900B3DBDC /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				DE530B7E26826D09006606C1 /* SceneDelegate.h */,
 				DE530B7F26826D09006606C1 /* SceneDelegate.m */,
 				DE530B8426826D09006606C1 /* Main.storyboard */,
+				DE71D7062682C78900B3DBDC /* SettingsViewController.h */,
+				DE71D7072682C78900B3DBDC /* SettingsViewController.m */,
 				DE530BB026827658006606C1 /* TipViewController.h */,
 				DE530BB126827658006606C1 /* TipViewController.m */,
 				DE530B8726826D0A006606C1 /* Assets.xcassets */,
@@ -268,6 +273,7 @@
 			files = (
 				DE530B7D26826D09006606C1 /* AppDelegate.m in Sources */,
 				DE530B8E26826D0A006606C1 /* main.m in Sources */,
+				DE71D7082682C78900B3DBDC /* SettingsViewController.m in Sources */,
 				DE530BB226827658006606C1 /* TipViewController.m in Sources */,
 				DE530B8026826D09006606C1 /* SceneDelegate.m in Sources */,
 			);

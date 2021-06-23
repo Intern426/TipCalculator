@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingsViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TipViewController : UIViewController
+@interface TipViewController : UIViewController <SettingsViewControllerDelegate>
 
 @end
 

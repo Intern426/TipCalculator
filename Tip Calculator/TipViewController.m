@@ -20,11 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    SettingsViewController* controller = [[SettingsViewController alloc] init];
+    controller.delegate = self;
+
     // Do any additional setup after loading the view.
     [self.billAmountField becomeFirstResponder];
 }
 - (IBAction)onTap:(id)sender {    
     [self.view endEditing:true]; // YES does the same thing (YES = true)
+}
+
+-(void) passDefaultTip:(UISegmentedControl*) selectedTip {
+    self.tipPercentageControl.selectedSegmentIndex = selectedTip.selectedSegmentIndex;
 }
 
 - (void)hideLabels {
@@ -61,10 +68,6 @@
 }
 
 - (IBAction)updateLabels:(id)sender {
-   // if (self.billAmountField.text.length == 0) {
-   //     [self hideLabels];
-   // }
-    
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     

@@ -17,15 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsf-mR-Jzs">
-                                <rect key="frame" x="154" y="118" width="205" height="90"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lsf-mR-Jzs">
+                                <rect key="frame" x="154" y="118" width="205" height="69.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="onEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="fvA-LU-OST"/>
+                                    <action selector="onEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="gbv-ah-Tkk"/>
+                                    <action selector="onNotEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="HpJ-XU-b0v"/>
                                     <action selector="updateLabels:" destination="BYZ-38-t0r" eventType="editingChanged" id="jck-W7-dcW"/>
                                 </connections>
                             </textField>

@@ -21,10 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.billAmountField becomeFirstResponder];
 }
-- (IBAction)onTap:(id)sender {
-    NSLog(@"hello");
-    
+- (IBAction)onTap:(id)sender {    
     [self.view endEditing:true]; // YES does the same thing (YES = true)
 }
 
@@ -46,11 +45,20 @@
 - (void)showLabels {
     return;
 }
+
 - (IBAction)onEditing:(id)sender {
-    self.billAmountField.text = @"";
-    self.billAmountField.textColor = [UIColor blackColor];
+    if (self.billAmountField.textColor != [UIColor blackColor])  {
+        self.billAmountField.text = @"";
+        self.billAmountField.textColor = [UIColor blackColor];
+    }
 }
 
+- (IBAction)onNotEditing:(id)sender {
+    if(self.billAmountField.text.length == 0) {
+        self.billAmountField.text = @"$";
+        self.billAmountField.textColor = [UIColor grayColor];
+    }
+}
 
 - (IBAction)updateLabels:(id)sender {
    // if (self.billAmountField.text.length == 0) {

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 //@protocol SettingsViewControllerDelegate;
 
 @protocol SettingsViewControllerDelegate <NSObject>
--(void) passDefaultTip:(UISegmentedControl*) selectedTip;
+-(void) setDefaultTip:(NSInteger) selectedTip;
 @end
 
 

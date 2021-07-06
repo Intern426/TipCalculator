@@ -18,10 +18,6 @@
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)onSelectTip:(id)sender {
-    [self.delegate passDefaultTip:self.tipPercentageControl];
-}
-
 /*
 #pragma mark - Navigation
 
@@ -29,7 +25,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSLog(@"Hello world?");
 }
 */
+- (IBAction)tapSave:(UIButton *)sender {
+    [self.delegate setDefaultTip:self.tipPercentageControl.selectedSegmentIndex];
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+
+- (IBAction)tapClose:(UIButton *)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
+}
 
 @end

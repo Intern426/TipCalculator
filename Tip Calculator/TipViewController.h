@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface TipViewController : UIViewController <SettingsViewControllerDelegate>
+
 
 @end
 

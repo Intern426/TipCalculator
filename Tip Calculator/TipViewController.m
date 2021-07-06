@@ -7,7 +7,7 @@
 
 #import "TipViewController.h"
 
-@interface TipViewController ()
+@interface TipViewController () <SettingsViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *billAmountField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
@@ -80,14 +80,21 @@
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
 }
 
-/*
+-(void)setDefaultTip: (NSInteger) selectedTip{
+    self.tipPercentageControl.selectedSegmentIndex = selectedTip;
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    UINavigationController *navigationController = [segue destinationViewController];
+    SettingsViewController *settingsController = (SettingsViewController*)navigationController.topViewController;
+    settingsController.delegate = self;
 }
-*/
+
 
 @end

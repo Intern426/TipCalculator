@@ -107,12 +107,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="wxZ-mw-h0g" kind="show" id="3bH-R4-YHC"/>
+                                    <segue destination="zDQ-nd-xdr" kind="presentation" modalPresentationStyle="fullScreen" id="E3Y-Xa-5LY"/>
                                 </connections>
                             </button>
-                            <connections>
-                                <segue destination="wxZ-mw-h0g" kind="show" id="fO1-96-OVy"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -171,25 +168,65 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
-                                <connections>
-                                    <action selector="onSelectTip:" destination="wxZ-mw-h0g" eventType="valueChanged" id="9c3-Vl-hyV"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rTZ-Y8-GUb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="CmI-Rj-fw4"/>
+                    <navigationItem key="navigationItem" title="Settings" id="CmI-Rj-fw4">
+                        <barButtonItem key="leftBarButtonItem" image="clear" catalog="system" style="plain" id="EjJ-hR-WB5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wZw-zP-peR">
+                                <rect key="frame" x="20" y="10" width="74" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close-icon"/>
+                                <connections>
+                                    <action selector="tapClose:" destination="wxZ-mw-h0g" eventType="touchDown" id="h0Z-BY-uzh"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="tapCloseNoSave:" destination="wxZ-mw-h0g" id="VqZ-bs-WID"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="a2h-UD-1dM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="VOT-9W-KOZ">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="tapSave:" destination="wxZ-mw-h0g" eventType="touchDown" id="7zh-yy-UKd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tipPercentageControl" destination="Lwh-FJ-QSw" id="R4q-xI-VXc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVm-6p-uhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990" y="88"/>
+            <point key="canvasLocation" x="1997" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v8a-Cl-JmP">
+            <objects>
+                <navigationController id="zDQ-nd-xdr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fhM-la-lyv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eiK-eS-vT8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wxZ-mw-h0g" kind="relationship" relationship="rootViewController" id="CaE-TC-jfo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utY-yn-gDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="88"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="3bH-R4-YHC"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="clear" catalog="system" width="128" height="114"/>
+        <image name="close-icon" width="26" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
